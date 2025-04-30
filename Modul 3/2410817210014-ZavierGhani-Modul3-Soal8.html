@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>Pendaftaran Kursus</title>
+</head>
+<body>
+
+<center>
+    <form action="#" method="post">
+<table border="1" width="620" cellpadding="10" cellspacing="0"
+style="border-right: 3px solid black; border-left: 3px solid grey; border-top: 3px solid grey;">
+    <tr bgcolor="skyblue">
+        <td align="center">
+            <font size="6" color="red" face="Arial"><b>Pendaftaran Kursus</b></font>
+        </td>
+    </tr>
+</table>
+
+<table width="620" cellpadding="5" cellspacing="4" bgcolor="gray"
+style="border-right: 3px solid black; border-left: 3px solid grey; border-bottom: 3px solid grey;">
+    <tr>
+        <td colspan="2">
+            <font size="5" face="Arial"><b>Data Diri</b></font>
+        </td>
+    </tr>
+
+    <tr>
+        <td width="200"><font face="Arial">Nama :</font></td>
+        <td><input type="text" size="30"></td>
+    </tr>
+    <tr>
+        <td><font face="Arial">NIM :</font></td>
+        <td><input type="text" size="30"></td>
+    </tr>
+    <tr>
+        <td><font face="Arial">E-mail :</font></td>
+        <td><input type="text" size="30"></td>
+    </tr>
+    <tr>
+        <td><font face="Arial">Tanggal Lahir :</font></td>
+        <td><input type="date"></td>
+    </tr>
+    <tr>
+        <td><font face="Arial">Jenis Kelamin:</font></td>
+        <td>
+            <input type="radio" name="jk" value="L"> Laki-laki<br>
+            <input type="radio" name="jk" value="P"> Perempuan
+        </td>
+    </tr>
+    <tr>
+        <td><font face="Arial">Pilih Program Kursus:</font></td>
+        <td>
+            <input type="checkbox" name="kursus1" value="C#"> C#<br>
+            <input type="checkbox" name="kursus2" value="Java"> Java<br>
+            <input type="checkbox" name="kursus3" value="SQL"> SQL<br>
+            <input type="checkbox" name="kursus4" value="HTML dan PHP"> HTML dan PHP
+        </td>
+    </tr>
+    <tr>
+        <td><font face="Arial">Pilihan Hari/Jam Kursus:</font></td>
+        <td>
+            <select>
+                <option>Senin - Rabu / 09.00 - 11.00</option>
+                <option>Kamis - Sabtu / 08.00 - 10.00</option>
+            </select>
+        </td>
+    </tr>
+</table>
+
+<table border="1" width="620" cellpadding="10" cellspacing="0" bgcolor="salmon"
+style="border-right: 3px solid black; border-left: 3px solid grey; border-bottom: 3px solid black;">
+    <tr>
+        <td>
+            <font face="Arial">Komentar Anda</font><br>
+            <textarea cols="60" rows="5"></textarea><br><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+            <input type="button" value="Cancel">
+        </td>
+    </tr>
+</table>
+</form>
+</center>
+</body>
+</html>
