@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Hubungi Saya</title>
+    <script>
+        function showMessage() {
+            alert("Data Anda telah tersimpan. Terima kasih atas komentar yang diberikan.");
+        }
+
+        function goToHome() {
+            parent.main.location.href = 'beranda.html';
+        }
+    </script>
+</head>
+<body bgcolor="#fae3b4">
+<center>
+<form onsubmit="showMessage(); return false;">
+    <!-- Judul -->
+    <table border="1" width="620" cellpadding="40" cellspacing="0"
+    style="border-right: 3px solid black; border-left: 3px solid grey; border-top: 3px solid grey;" bgcolor="#a3c293">
+        <tr>
+            <td align="center">
+                <font size="6" color="black" face="Arial"><b>Hubungi Saya</b></font>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Form Data Diri -->
+    <table width="620" cellpadding="5" cellspacing="4"
+    style="border-right: 3px solid black; border-left: 3px solid grey; border-bottom: 3px solid grey;">
+        <tr>
+            <td colspan="2">
+                <font size="5" face="Arial"><b>Data Diri</b></font>
+            </td>
+        </tr>
+        <tr>
+            <td width="200"><font face="Arial">Nama :</font></td>
+            <td><input type="text" size="30" required></td>
+        </tr>
+        <tr>
+            <td><font face="Arial">NIM :</font></td>
+            <td><input type="text" size="30" required></td>
+        </tr>
+        <tr>
+            <td><font face="Arial">E-mail :</font></td>
+            <td><input type="email" size="30" required></td>
+        </tr>
+        <tr>
+            <td><font face="Arial">Tanggal Lahir :</font></td>
+            <td><input type="date" required></td>
+        </tr>
+        <tr>
+            <td><font face="Arial">Jenis Kelamin:</font></td>
+            <td>
+                <input type="radio" name="jk" value="L" required> Laki-laki<br>
+                <input type="radio" name="jk" value="P"> Perempuan
+            </td>
+        </tr>
+        <tr><td colspan="2" height="50"></td></tr>
+    </table>
+
+    <!-- Komentar dan Tombol -->
+    <table border="1" width="620" cellpadding="10" cellspacing="0" bgcolor="#a3c293"
+    style="border-right: 3px solid black; border-left: 3px solid grey; border-bottom: 3px solid black;">
+        <tr>
+            <td>
+                <font face="Arial">Komentar Anda</font><br>
+                <textarea cols="60" rows="5" required></textarea><br><br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+                <input type="button" value="Cancel"onclick="parent.location='homepage.html'">
+            </td>
+        </tr>
+    </table>
+</form>
+</center>
+</body>
+</html>
